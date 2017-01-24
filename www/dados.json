@@ -1,13 +1,13 @@
 {
   "listaFotos": [
       { "listaNome": "Hora do Bolo",
-        "fotos": ["img/foto1.jpg", "img/foto2.jpg", "img/foto3.jpg", "img/foto4.jpg", "img/foto5.jpg"]
+        "fotos": ["img/a1.jpg", "img/a2.jpg", "img/a3.jpg", "img/a4.jpg", "img/a5.jpg"]
       },
       { "listaNome": "Gincana",
-        "fotos": ["img/foto11.jpg", "img/foto12.jpg", "img/foto13.jpg", "img/foto14.jpg", "img/foto15.jpg"]
+        "fotos": ["img/b1.jpg", "img/b2.jpg", "img/b3.jpg", "img/b4.jpg", "img/b5.jpg"]
       },
       { "listaNome": "Dança",
-        "fotos": ["img/foto21.jpg", "img/foto22.jpg", "img/foto23.jpg", "img/foto24.jpg", "img/foto25.jpg"]
+        "fotos": ["img/c1.jpg", "img/c2.jpg", "img/fotoc3.jpg", "img/fotoc4.jpg", "img/fotoc5.jpg"]
       }
   ],
   "quiz": [
