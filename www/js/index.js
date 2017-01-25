@@ -14,9 +14,6 @@ function pronto(){
     }
 
     function ratchetPronto() {
-        if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
-
-        }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
             var dados = dadosJSON.listaFotos;
             var listaFotos = "<ul class='table-view'>";
