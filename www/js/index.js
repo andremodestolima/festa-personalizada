@@ -18,9 +18,13 @@ function pronto(){
             var dados = dadosJSON.listaFotos;
             var listaFotos = "<ul class='table-view'>";
             for(i=0; i<dados.length; i++ ) {
-                listaFotos += '<li class="table-view-cell"><a class="navigate-right" onclick="novaPaginaFotos('+ i +')">' + dados[i].listaNome + "</a></li>"; }
+                listaFotos += '<li class="table-view-cell"><a class="navigate-right" id="'+ i +'">' + dados[i].listaNome + "</a></li>";
+            }
             listaFotos += "</ul>";
             document.getElementById("conteudo").innerHTML = listaFotos;
+            for(i=0; i<dados.length; i++ ) {
+                document.getElementById(String(i)).addEventListener("click", function(){novaPaginaFotos(i)}, false);
+            }
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             var dados = dadosJSON.listaFotos[paginaAtual];
