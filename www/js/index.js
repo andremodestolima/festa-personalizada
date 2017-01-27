@@ -8,6 +8,11 @@ function pronto(){
         dadosJSON = data;
     });
 
+    var listaFotos = "<ul class='table-view'>";
+    for(i=0; i<dadosJSON.listaFotos.length; i++ ) {
+        listaFotos += '<li class="table-view-cell"><a class="navigate-right" id="'+ i +'">' + dadosJSON.listaFotos[i].listaNome + "</a></li>"; }
+    listaFotos += "</ul>";
+
     function novaPaginaFotos(qual){
         paginaAtual = qual;
         window.PUSH({url: 'fotos.html', transition: 'slide-in'});
@@ -15,18 +20,13 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
-            var dados = dadosJSON.listaFotos;
-            var listaFotos = "<ul class='table-view'>";
-            for(i=0; i<dados.length; i++ ) {
-                listaFotos += '<li class="table-view-cell"><a class="navigate-right" id="'+ i +'">' + dados[i].listaNome + "</a></li>";
-            }
-            listaFotos += "</ul>";
+            navigator.vibrate(200);
             document.getElementById("conteudo").innerHTML = listaFotos;
             for(i=0; i<dados.length; i++ ) {
-                document.getElementById(String(i)).addEventListener("click", function(){novaPaginaFotos(i)}, false);
-            }
+                document.getElementById(String(i)).addEventListener("click", function(){novaPaginaFotos(i)}, false); }
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
+            navigator.vibrate(200);
             var dados = dadosJSON.listaFotos[paginaAtual];
             var fotos = '<div class="slider" id="mySlider"><div class="slide-group">';
             fotos += '<div class="slide"><img src="' + dados.fotos[0] + '"><span class="slide-text"><span class="icon icon-left-nav"></span> Escorregue para a esquerda </span></div>';
