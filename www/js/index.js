@@ -28,7 +28,7 @@ function pronto(){
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
-            document.getElementById("conteudo").innerHTML = fotos[paginaAtual];
+            document.getElementById("conteudo").innerHTML = fotos[1];
             document.getElementById("tituloFotos").innerHTML = "FOTOS";
         }
     }
