@@ -34,6 +34,7 @@ function pronto(){
                 fotos += '<div class="slide"><img src="' + dados.fotos[i] + '"></div>'; }
             fotos += '</div></div>';
             document.getElementById("conteudo").innerHTML = fotos;
+            document.getElementById("tituloFotos").innerHTML = dados.listaNome;
         }
     }
 }
