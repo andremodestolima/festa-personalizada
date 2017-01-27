@@ -22,15 +22,13 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
-            navigator.vibrate(200);
             document.getElementById("conteudo").innerHTML = listaFotos;
             for(i=0; i<tamanhoLista.length; i++ ) {
                 document.getElementById(String(i)).addEventListener("click", function(){ paginaAtual = i; window.PUSH({url: 'fotos.html', transition: 'slide-in'});}, false); }
+            alert(tamanhoLista);
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
-            alert(tamanhoLista);
-            navigator.vibrate(200);
             document.getElementById("conteudo").innerHTML = fotos[paginaAtual];
             document.getElementById("tituloFotos").innerHTML = "FOTOS";
         }
