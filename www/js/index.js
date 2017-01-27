@@ -1,7 +1,7 @@
 function pronto(){
     window.addEventListener('push', ratchetPronto);
     window.PUSH = PUSH;
-    var paginaAtual = "";
+    var paginaAtual;
     var listaFotos;
     var tamanhoLista = 0;
     var fotos=[];
@@ -20,16 +20,11 @@ function pronto(){
         listaFotos += "</ul>";
     });
 
-    function atualizarPagina(qual){
-        paginaAtual = qual;
-        window.PUSH({url: 'fotos.html', transition: 'slide-in'});
-    }
-
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
             document.getElementById("conteudo").innerHTML = listaFotos;
             for(i=0; i<tamanhoLista; i++ ) {
-                document.getElementById(String(i)).addEventListener("click", function(){ atualizarPagina(i) }, false); }
+                document.getElementById(String(i)).addEventListener("click", function(){ paginaAtual = i; window.PUSH({url: 'fotos.html', transition: 'slide-in'}); }, false); }
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
