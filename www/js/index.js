@@ -28,10 +28,10 @@ function pronto(){
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
             document.getElementById("conteudo").innerHTML = listaFotos;
+            alert(document.getElementById("conteudo").innerHTML);
             for(i=0; i<tamanhoLista.length; i++ ) {
                 document.getElementById(String(i)).addEventListener("click", function(){ atualizarPagina(i) }, false); }
             alert(tamanhoLista);
-            alert(document.getElementById("conteudo").innerHTML);
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
