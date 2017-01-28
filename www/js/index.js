@@ -22,7 +22,7 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
-            var numTopicos = 6;
+            var numTopicos = 4;
             document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos;
             document.getElementById("opcaoQuiz").style.height = window.innerHeight/numTopicos;
             document.getElementById("opcaoTrofeu").style.height = window.innerHeight/numTopicos;
