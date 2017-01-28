@@ -16,7 +16,7 @@ body {
 }
 
 #escorregue{
-    position:fixed;
+    position:absolute;
     margin: auto;
     margin-top:50px;
     z-index: 10;
@@ -27,4 +27,19 @@ body {
 
 .celula{
     height:100px;
+}
+#opcaoFotos{
+    background-color: #7cff00;
+}
+#opcaoQuiz{
+    background-color: #90e9ff;
+}
+#opcaoTrofeu{
+    background-color: #ffd5a9;
+}
+#opcaoMensagem{
+    background-color: #feffc9;
+}
+#opcaoSair{
+    background-color: #ff96a4;
 }
