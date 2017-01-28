@@ -11,9 +11,47 @@
       }
   ],
   "quiz": [
-
+      { "pergunta":"Qual é a cor preferida?",
+        "tipoResposta":"texto",
+        "respostas":["Cor azul","Cor Vermelha","Cor amarela"],
+        "numeroCerto":2
+      },
+      { "pergunta":"Que dia é hoje?",
+        "tipoResposta":"texto",
+        "respostas":["Segunda","Terça","Quarta"],
+        "numeroCerto":3
+      },
+      { "pergunta":"Qual animal?",
+        "tipoResposta":"texto",
+        "respostas":["Zebra","Girafa","Leão"],
+        "numeroCerto":3
+      },
+      { "pergunta":"Que imagem prefere?",
+        "tipoResposta":"imagem",
+        "respostas":["img/quiz1a.JPG","img/quiz1b.JPG","img/quiz1c.JPG"],
+        "numeroCerto":1
+      },
+      { "pergunta":"Quem é vc?",
+        "tipoResposta":"texto",
+        "respostas":["Batman","Superman","She-ha"],
+        "numeroCerto":2
+      }
   ],
   "trofeus": [
-
+      { "texto":"Troféu simpatia!",
+        "imagem":"img/trofeu1.JPG"
+      },
+      { "texto":"Troféu charme!",
+        "imagem":"img/trofeu2.JPG"
+      },
+      { "texto":"Troféu besteira!",
+        "imagem":"img/trofeu3.JPG"
+      },
+      { "texto":"Troféu loucura!",
+        "imagem":"img/trofeu4.JPG"
+      },
+      { "texto":"Troféu cara de pau!",
+        "imagem":"img/trofeu5.JPG"
+      }
   ]
 }

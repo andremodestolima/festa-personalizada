@@ -23,13 +23,23 @@ function pronto(){
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
             document.getElementById("conteudo").innerHTML = listaFotos;
-            for(i=0; i<tamanhoLista; i++ ) {
-                document.getElementById(String(i)).addEventListener("click", function(){ paginaAtual = i; window.PUSH({url: 'fotos.html', transition: 'slide-in'}); }, false); }
+            for (i = 0; i < tamanhoLista; i++) {
+                document.getElementById(String(i)).addEventListener("click", function () {
+                    paginaAtual = i;
+                    window.PUSH({url: 'fotos.html', transition: 'slide-in'});
+                }, false);
+            }
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
             document.getElementById("conteudo").innerHTML = fotos[1];
             document.getElementById("tituloFotos").innerHTML = "FOTOS";
+        }
+        if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/quiz.html') {
+
+        }
+        if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/trofeus.html') {
+
         }
     }
 }
