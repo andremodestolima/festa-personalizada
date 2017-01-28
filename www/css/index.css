@@ -17,8 +17,8 @@ body {
 
 #escorregue{
     position:fixed;
-    margin: auto;
-    margin-top: 60%;
+    margin-top:0px;
+    margin-left:0px;
     z-index: 10;
     color: white;
     text-shadow: 1px 1px 3px #444444;
