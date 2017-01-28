@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/ratchet.min.css" />
     <title>festa personalizada !</title>
 </head>
-<body>
+<body onload="ajustaPagina()">
 <header class="bar bar-nav">
     <h1 class="title celula" id="tituloOpcoes">SEU ANIVERSÁRIO</h1>
 </header>
@@ -41,6 +41,16 @@
         </li>
     </ul>
 </div>
+<script>
+    function ajustaPagina() {
+        var numTopicos = 4;
+        document.getElementById("opcaoFotos").style.height = "100px"; //window.innerHeight/numTopicos;
+        document.getElementById("opcaoQuiz").style.height = window.innerHeight/numTopicos;
+        document.getElementById("opcaoTrofeu").style.height = window.innerHeight/numTopicos;
+        document.getElementById("opcaoMensagem").style.height = window.innerHeight/numTopicos;
+        document.getElementById("opcaoSair").style.height = window.innerHeight/numTopicos;
+    }
+</script>
 <script type="text/javascript" src="js/jquery-min.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/ratchet.min.js"></script>
