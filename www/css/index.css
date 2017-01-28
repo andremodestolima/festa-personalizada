@@ -17,7 +17,10 @@ body {
 
 #escorregue{
     position: absolute;
-    left: 0px;
-    top: 0px;
+    margin: auto;
+    margin-top: 60%;
     z-index: 10;
+    color: white;
+    text-shadow: 1px 1px 3px #444444;
+    font-size: 2%;
 }
