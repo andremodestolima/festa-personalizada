@@ -12,7 +12,7 @@ function pronto(){
             tamanhoLista += 1;
             listaFotos += '<li class="table-view-cell"><a class="navigate-right" id="'+ i +'">' + data.listaFotos[i].listaNome + "</a></li>";
             fotos[i] = '<div class="slider" id="mySlider"><div class="slide-group">';
-            fotos[i] += '<div class="slide"><img src="' + data.listaFotos[i].fotos[0] + '" class="foto"><div id="escorregue"><span class="icon icon-left-nav"></span>Slide me</div></div>';
+            fotos[i] += '<div class="slide"><img src="' + data.listaFotos[i].fotos[0] + '" class="foto"><div class="slide-text" id="escorregue"><span class="icon icon-left-nav"></span>Deslize a imagem</div></div>';
             for (b = 1; b < data.listaFotos[i].fotos.length; b++) {
                 fotos[i] += '<div class="slide"><img src="' + data.listaFotos[i].fotos[b] + '" class="foto"></div>'; }
             fotos[i] += '</div></div>';
