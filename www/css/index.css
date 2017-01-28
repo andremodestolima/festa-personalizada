@@ -16,14 +16,14 @@ body {
 }
 
 #escorregue{
-    margin-top:0px;
-    margin-left:0px;
+    margin: auto;
+    margin-top:50px;
     z-index: 10;
     color: white;
     text-shadow: 1px 1px 3px #444444;
-    font-size:9%;
+    font-size:15px;
 }
 
 .celula{
-    height:15%;
+    height:100px;
 }
