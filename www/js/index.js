@@ -23,6 +23,7 @@ function pronto(){
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
             document.getElementById("conteudo").innerHTML = listaFotos;
+            alert(paginaAtual);
             for (i = 0; i < tamanhoLista; i++) {
                 document.getElementById(String(i)).addEventListener("click", function () {
                     paginaAtual = i;
