@@ -14,7 +14,7 @@ function pronto(){
             fotos[i] = '<div class="slider" id="mySlider"><div class="slide-group">';
             fotos[i] += '<div class="slide"><img src="' + data.listaFotos[i].fotos[0] + '" class="foto"><span class="slide-text"><span class="icon icon-left-nav"></span> Escorregue para a esquerda </span></div>';
             for (b = 1; b < data.listaFotos[i].fotos.length; b++) {
-                fotos[i] += '<div class="slide"><img src="' + data.listaFotos[i].fotos[b] + '"></div>'; }
+                fotos[i] += '<div class="slide"><img src="' + data.listaFotos[i].fotos[b] + '" class="foto"></div>'; }
             fotos[i] += '</div></div>';
         }
         listaFotos += "</ul>";
