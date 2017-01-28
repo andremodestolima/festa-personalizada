@@ -25,6 +25,7 @@ function pronto(){
             document.getElementById("conteudo").innerHTML = listaFotos;
             alert(paginaAtual);
             for (i = 0; i < tamanhoLista; i++) {
+                alert(i);
                 document.getElementById(String(i)).addEventListener("click", function () {
                     paginaAtual = i;
                     alert(paginaAtual);
@@ -34,7 +35,7 @@ function pronto(){
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
-            document.getElementById("conteudo").innerHTML = fotos[2];
+            document.getElementById("conteudo").innerHTML = fotos[0];
             document.getElementById("tituloFotos").innerHTML = "FOTOS";
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/quiz.html') {
