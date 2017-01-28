@@ -28,6 +28,9 @@ body {
 .celula{
     height:100px;
 }
+#tituloOpcoes{
+    background-color: #e800ff;
+}
 #opcaoFotos{
     background-color: #7cff00;
 }
