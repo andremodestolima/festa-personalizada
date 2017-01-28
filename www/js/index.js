@@ -22,6 +22,12 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
+            var numTopicos = 6;
+            document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos;
+            document.getElementById("opcaoQuiz").style.height = window.innerHeight/numTopicos;
+            document.getElementById("opcaoTrofeu").style.height = window.innerHeight/numTopicos;
+            document.getElementById("opcaoMensagem").style.height = window.innerHeight/numTopicos;
+            document.getElementById("opcaoSair").style.height = window.innerHeight/numTopicos;
             document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
