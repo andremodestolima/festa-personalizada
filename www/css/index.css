@@ -16,6 +16,7 @@ body {
 }
 
 #escorregue{
+    position:fixed;
     margin: auto;
     margin-top:50px;
     z-index: 10;
