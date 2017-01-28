@@ -26,19 +26,23 @@ function pronto(){
             for (i = 0; i < tamanhoLista; i++) {
                 document.getElementById(String(i)).addEventListener("click", function () {
                     paginaAtual = i;
+                    alert(paginaAtual);
                     window.PUSH({url: 'fotos.html', transition: 'slide-in'});
                 }, false);
             }
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
-            document.getElementById("conteudo").innerHTML = fotos[1];
+            document.getElementById("conteudo").innerHTML = fotos[2];
             document.getElementById("tituloFotos").innerHTML = "FOTOS";
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/quiz.html') {
 
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/trofeus.html') {
+
+        }
+        if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/mensagem.html') {
 
         }
     }
