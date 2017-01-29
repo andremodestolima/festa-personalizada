@@ -8,12 +8,11 @@ function pronto(){
     var fotos=[];
 
     jQuery.getJSON("dados.json", function(data){
-        opcoes ='<header class="bar bar-nav"><h1 class="title">'+ data.titulo +'</h1></header><div class="content"><ul class="table-view">';
+        opcoes ='<ul class="table-view">';
         for(i=0;i<data.opcoes.length;i++){
             opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in">'+ data.opcoes[i].nome +'</a></li>';
         }
-        opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul></div>';
-        opcoes +='<script type="text/javascript" src="js/jquery-min.js"></script><script type="text/javascript" src="cordova.js"></script><script type="text/javascript" src="js/ratchet.min.js"></script><script type="text/javascript" src="js/index.js"></script>';
+        opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul>';
         listaFotos = "<ul class='table-view'>";
         for(i=0; i<data.listaFotos.length; i++ ) {
             tamanhoLista += 1;
@@ -29,7 +28,7 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
-            document.getElementById("body").innerHTML = opcoes;
+            document.getElementById("content").innerHTML = opcoes;
             //var numTopicos = 5;
             //document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos+"px";
             //document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
