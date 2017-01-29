@@ -42,6 +42,7 @@
     </ul>
 </div>
 <script>
+    document.addEventListener('deviceready', function(){ ajustaPagina() });
     function ajustaPagina() {
         var numTopicos = 4;
         document.getElementById("opcaoFotos").style.height = "100px"; //window.innerHeight/numTopicos;
