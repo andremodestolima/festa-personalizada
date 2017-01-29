@@ -31,7 +31,7 @@ function pronto(){
             document.getElementById("content").innerHTML = opcoes;
             //var numTopicos = 5;
             //document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos+"px";
-            //document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
+            document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
             document.getElementById("content").innerHTML = listaFotos;
