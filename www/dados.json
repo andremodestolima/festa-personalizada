@@ -1,4 +1,11 @@
 {
+  "titulo":"SEU ANIVERSÁRIO",
+  "opcoes": [
+    { "link": "listaFotos.html", "nome": "FOTOS DA FESTA" },
+    { "link": "quiz.html", "nome": "QUIZ DO ANIVERSARIANTE" },
+    { "link": "trofeus.html", "nome": "TROFÉUS"},
+    { "link": "mensagem.html", "nome": "MANDE SUA MENSAGEM !"}
+  ],
   "listaFotos": [
       { "listaNome": "Hora do Bolo",
         "fotos": ["img/a1.JPG", "img/a2.JPG", "img/a3.JPG", "img/a4.JPG", "img/a5.JPG"]

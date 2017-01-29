@@ -1,12 +1,18 @@
 function pronto(){
     window.addEventListener('push', ratchetPronto);
     window.PUSH = PUSH;
+    var opcoes;
     var paginaAtual;
     var listaFotos;
     var tamanhoLista = 0;
     var fotos=[];
 
     jQuery.getJSON("dados.json", function(data){
+        opcoes ='<header class="bar bar-nav"><h1 class="title">'+ data.titulo +'</h1></header><div class="content"><ul class="table-view">';
+        for(i=0;i<data.opcoes.length;i++){
+            opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in">'+ data.opcoes[i].nome +'</a></li>';
+        }
+        opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul></div>';
         listaFotos = "<ul class='table-view'>";
         for(i=0; i<data.listaFotos.length; i++ ) {
             tamanhoLista += 1;
@@ -22,16 +28,14 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
-            var numTopicos = 5;
-            alert(window.innerHeight/numTopicos+"px");
-            document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos+"px";
-            document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
+            document.getElementById("content").innerHTML = opcoes;
+            //var numTopicos = 5;
+            //document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos+"px";
+            //document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
-            document.getElementById("conteudo").innerHTML = listaFotos;
-            alert(paginaAtual);
+            document.getElementById("content").innerHTML = listaFotos;
             for (i = 0; i < tamanhoLista; i++) {
-                alert(i);
                 document.getElementById(String(i)).addEventListener("click", function () {
                     paginaAtual = i;
                     alert(paginaAtual);
@@ -41,7 +45,7 @@ function pronto(){
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/fotos.html') {
             alert(paginaAtual);
-            document.getElementById("conteudo").innerHTML = fotos[0];
+            document.getElementById("content").innerHTML = fotos[0];
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/quiz.html') {
 

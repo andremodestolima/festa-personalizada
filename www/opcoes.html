@@ -11,47 +11,6 @@
     <title>festa personalizada !</title>
 </head>
 <body>
-<header class="bar bar-nav">
-    <h1 class="title celula" id="tituloOpcoes">SEU ANIVERSÁRIO</h1>
-</header>
-<div class="content">
-    <ul class="table-view">
-        <li class="table-view-cell" id="opcaoFotos">
-            <a class="navigate-right celula" href="listaFotos.html" data-transition="slide-in">
-                FOTOS DA FESTA
-            </a>
-        </li>
-        <li class="table-view-cell" id="opcaoQuiz">
-            <a class="navigate-right celula" href="quiz.html" data-transition="slide-in">
-                QUIZ DO ANIVERSARIANTE
-            </a>
-        </li>
-        <li class="table-view-cell" id="opcaoTrofeu">
-            <a class="navigate-right celula" href="trofeus.html" data-transition="slide-in">
-                TROFÉUS
-            </a>
-        </li>
-        <li class="table-view-cell" id="opcaoMensagem">
-            <a class="navigate-right celula" href="mensagem.html" data-transition="slide-in">
-                MANDE SUA MENSAGEM !
-            </a>
-        </li>
-        <li class="table-view-cell" id="opcaoSair">
-            <a class="celula" href="#" id="botaoSair"> SAIR </a>
-        </li>
-    </ul>
-</div>
-<script>
-    document.addEventListener('deviceready', function(){ ajustaPagina() });
-    function ajustaPagina() {
-        var numTopicos = 4;
-        document.getElementById("opcaoFotos").style.height = "100px"; //window.innerHeight/numTopicos;
-       // document.getElementById("opcaoQuiz").style.height = window.innerHeight/numTopicos;
-        //document.getElementById("opcaoTrofeu").style.height = window.innerHeight/numTopicos;
-        //document.getElementById("opcaoMensagem").style.height = window.innerHeight/numTopicos;
-        //document.getElementById("opcaoSair").style.height = window.innerHeight/numTopicos;
-    }
-</script>
 <script type="text/javascript" src="js/jquery-min.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/ratchet.min.js"></script>
