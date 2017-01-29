@@ -22,6 +22,8 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
+            var numTopicos = 5;
+            alert(window.innerHeight/numTopicos+"px");
             document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos+"px";
             document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
         }
