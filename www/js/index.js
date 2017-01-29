@@ -12,13 +12,13 @@ function pronto(){
         titulo =data.titulo;
         opcoes ='<ul class="table-view">';
         for(i=0;i<data.opcoes.length;i++){
-            opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in" style="background-color:'+ data.opcoes[i].bgCor +';height:'+ window.innerHeight/data.opcoes.length+'px;">'+ data.opcoes[i].nome +'</a></li>';
+            opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in" style="background-color:'+ data.opcoes[i].bgCor +';height:'+ window.innerHeight/(data.opcoes.length+1)+'px;">'+ data.opcoes[i].nome +'</a></li>';
         }
-        opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul>';
+        opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair" style="background-color:'+ data.sair +';height:'+ window.innerHeight/(data.opcoes.length+1)+'px;"> SAIR </a></li></ul>';
         listaFotos = "<ul class='table-view'>";
         for(i=0; i<data.listaFotos.length; i++ ) {
             tamanhoLista += 1;
-            listaFotos += '<li class="table-view-cell"><a class="navigate-right" id="'+ i +'">' + data.listaFotos[i].listaNome + "</a></li>";
+            listaFotos += '<li class="table-view-cell"><a class="navigate-right" id="'+ i +'" style="background-color:'+ data.listaFotos[i].bgCor +';height:'+ window.innerHeight/data.listaFotos.length+'px;">' + data.listaFotos[i].listaNome + "</a></li>";
             fotos[i] = '<div class="slider" id="mySlider"><div class="slide-group">';
             fotos[i] += '<div class="slide"><img src="' + data.listaFotos[i].fotos[0] + '" class="foto"><span id="escorregue"><span class="icon icon-left-nav"></span>Deslize a imagem</span></div>';
             for (b = 1; b < data.listaFotos[i].fotos.length; b++) {

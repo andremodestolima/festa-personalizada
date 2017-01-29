@@ -6,15 +6,19 @@
     { "link": "trofeus.html", "nome": "TROFÉUS", "bgCor":"#90e9ff" },
     { "link": "mensagem.html", "nome": "MANDE SUA MENSAGEM !", "bgCor":"#ffd5a9" }
   ],
+  "sair":"#aaeeee",
   "listaFotos": [
       { "listaNome": "Hora do Bolo",
-        "fotos": ["img/a1.JPG", "img/a2.JPG", "img/a3.JPG", "img/a4.JPG", "img/a5.JPG"]
+        "fotos": ["img/a1.JPG", "img/a2.JPG", "img/a3.JPG", "img/a4.JPG", "img/a5.JPG"],
+        "bgCor":"#e80aff"
       },
       { "listaNome": "Gincana",
-        "fotos": ["img/b1.JPG", "img/b2.JPG", "img/b3.JPG", "img/b4.JPG", "img/b5.JPG"]
+        "fotos": ["img/b1.JPG", "img/b2.JPG", "img/b3.JPG", "img/b4.JPG", "img/b5.JPG"],
+        "bgCor":"#7cffa0"
       },
       { "listaNome": "Dança",
-        "fotos": ["img/c1.JPG", "img/c2.JPG", "img/c3.JPG", "img/c4.JPG", "img/c5.JPG"]
+        "fotos": ["img/c1.JPG", "img/c2.JPG", "img/c3.JPG", "img/c4.JPG", "img/c5.JPG"],
+        "bgCor":"#9ae9ff"
       }
   ],
   "quiz": [
