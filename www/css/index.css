@@ -24,25 +24,3 @@ body {
     text-shadow: 1px 1px 3px #444444;
     font-size:15px;
 }
-
-.celula{
-    height:20px;
-}
-#tituloOpcoes{
-    background-color: #e800ff;
-}
-#opcaoFotos{
-    background-color: #7cff00;
-}
-#opcaoQuiz{
-    background-color: #90e9ff;
-}
-#opcaoTrofeu{
-    background-color: #ffd5a9;
-}
-#opcaoMensagem{
-    background-color: #feffc9;
-}
-#opcaoSair{
-    background-color: #ff96a4;
-}

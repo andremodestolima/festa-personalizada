@@ -12,7 +12,7 @@ function pronto(){
         titulo =data.titulo;
         opcoes ='<ul class="table-view">';
         for(i=0;i<data.opcoes.length;i++){
-            opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in" style="background-color:'+ data.opcoes[i].bgCor +';" >'+ data.opcoes[i].nome +'</a></li>';
+            opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in" style="background-color:'+ data.opcoes[i].bgCor +';height:'+ window.innerHeight/data.opcoes.length+'px;">'+ data.opcoes[i].nome +'</a></li>';
         }
         opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul>';
         listaFotos = "<ul class='table-view'>";
@@ -32,8 +32,6 @@ function pronto(){
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
             document.getElementById("titulo").innerHTML = titulo;
             document.getElementById("content").innerHTML = opcoes;
-            //var numTopicos = 5;
-            //document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos+"px";
             document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
         }
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/listaFotos.html') {
