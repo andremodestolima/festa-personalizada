@@ -12,7 +12,7 @@ function pronto(){
         titulo =data.titulo;
         opcoes ='<ul class="table-view">';
         for(i=0;i<data.opcoes.length;i++){
-            opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in" style="background-color:powderblue;" >'+ data.opcoes[i].nome +'</a></li>';
+            opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in" style="background-color:'+ data.opcoes[i].bgCor +';" >'+ data.opcoes[i].nome +'</a></li>';
         }
         opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul>';
         listaFotos = "<ul class='table-view'>";
