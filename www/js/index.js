@@ -1,6 +1,7 @@
 function pronto(){
     window.addEventListener('push', ratchetPronto);
     window.PUSH = PUSH;
+    var titulo;
     var opcoes;
     var paginaAtual;
     var listaFotos;
@@ -8,6 +9,7 @@ function pronto(){
     var fotos=[];
 
     jQuery.getJSON("dados.json", function(data){
+        titulo =data.titulo;
         opcoes ='<ul class="table-view">';
         for(i=0;i<data.opcoes.length;i++){
             opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in">'+ data.opcoes[i].nome +'</a></li>';
@@ -28,7 +30,8 @@ function pronto(){
 
     function ratchetPronto() {
         if (document.location.href.substring(document.location.href.lastIndexOf('/')) == '/opcoes.html') {
-            document.getElementById("placeholder").innerHTML = opcoes;
+            document.getElementById("titulo").innerHTML = titulo;
+            document.getElementById("content").innerHTML = opcoes;
             //var numTopicos = 5;
             //document.getElementById("opcaoFotos").style.height = window.innerHeight/numTopicos+"px";
             document.getElementById("botaoSair").addEventListener("click", function (){navigator.app.exitApp();}, false);
