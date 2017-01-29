@@ -8,11 +8,11 @@ function pronto(){
     var fotos=[];
 
     jQuery.getJSON("dados.json", function(data){
-        opcoes ='<header class="bar bar-nav"><h1 class="title">'+ data.titulo +'</h1></header><div class="content" id="content"><ul class="table-view">';
+        opcoes ='<ul class="table-view">';
         for(i=0;i<data.opcoes.length;i++){
             opcoes += '<li class="table-view-cell"><a class="navigate-right" href="'+ data.opcoes[i].link +'" data-transition="slide-in">'+ data.opcoes[i].nome +'</a></li>';
         }
-        opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul></div>';
+        opcoes +='<li class="table-view-cell"><a href="#" id="botaoSair"> SAIR </a></li></ul>';
         listaFotos = "<ul class='table-view'>";
         for(i=0; i<data.listaFotos.length; i++ ) {
             tamanhoLista += 1;
