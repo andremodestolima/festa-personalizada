@@ -1,10 +1,10 @@
 {
   "titulo":"SEU ANIVERSÁRIO",
   "opcoes": [
-    { "link": "listaFotos.html", "nome": "FOTOS DA FESTA", "bgCor":"AA0000" },
-    { "link": "quiz.html", "nome": "QUIZ DO ANIVERSARIANTE", "bgCor":"00AA00"  },
-    { "link": "trofeus.html", "nome": "TROFÉUS", "bgCor":"0000AA" },
-    { "link": "mensagem.html", "nome": "MANDE SUA MENSAGEM !", "bgCor":"A0000A" }
+    { "link": "listaFotos.html", "nome": "FOTOS DA FESTA", "bgCor":"#AA0000" },
+    { "link": "quiz.html", "nome": "QUIZ DO ANIVERSARIANTE", "bgCor":"#00AA00"  },
+    { "link": "trofeus.html", "nome": "TROFÉUS", "bgCor":"#0000AA" },
+    { "link": "mensagem.html", "nome": "MANDE SUA MENSAGEM !", "bgCor":"#A0000A" }
   ],
   "listaFotos": [
       { "listaNome": "Hora do Bolo",
